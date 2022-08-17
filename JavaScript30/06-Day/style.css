@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: royalblue;
+}
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 50px;
+}
+.container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: calc(100% - 6px);
+  background-color: #fff;
+  padding: 0 20px;
+  color: #222;
+}
+.container > ul > li:first-of-type {
+  border-top: 1px solid #222;
+}
+.container > ul > li:nth-of-type(odd) {
+  transform: perspective(100px) rotateX(-5deg);
+}
+.container > ul > li:nth-of-type(odd):not(:last-of-type) {
+  box-shadow: 0 2px 0 0px #222;
+}
+.container > ul > li:nth-of-type(even) {
+  transform: perspective(100px) rotateX(5deg);
+  border-bottom: 2px solid #222;
+}
+
+.container > input[type="text"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 6px;
+  text-align: center;
+  font-size: 20px;
+  border: 5px solid #eee;
+}
+.h1 {
+  background-color: gold;
+}

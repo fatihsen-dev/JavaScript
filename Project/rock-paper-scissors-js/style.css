@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gold;
+  border-radius: 2px;
+}
+
+.computer,
+.player,
+.score {
+  width: 400px;
+  height: 160px;
+  background: #222;
+}
+
+.computer.player, .computer.computer,
+.player.player,
+.player.computer,
+.score.player,
+.score.computer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.computer.player .item, .computer.computer .item,
+.player.player .item,
+.player.computer .item,
+.score.player .item,
+.score.computer .item {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100%;
+  background-position: center;
+  background-size: 120%;
+  cursor: pointer;
+  border: 2px solid #444;
+  transition: .15s;
+}
+
+.computer.player .item:nth-of-type(1), .computer.computer .item:nth-of-type(1),
+.player.player .item:nth-of-type(1),
+.player.computer .item:nth-of-type(1),
+.score.player .item:nth-of-type(1),
+.score.computer .item:nth-of-type(1) {
+  background-image: url(assets/paper.png);
+}
+
+.computer.player .item:nth-of-type(2), .computer.computer .item:nth-of-type(2),
+.player.player .item:nth-of-type(2),
+.player.computer .item:nth-of-type(2),
+.score.player .item:nth-of-type(2),
+.score.computer .item:nth-of-type(2) {
+  background-image: url(assets/rock.png);
+}
+
+.computer.player .item:nth-of-type(3), .computer.computer .item:nth-of-type(3),
+.player.player .item:nth-of-type(3),
+.player.computer .item:nth-of-type(3),
+.score.player .item:nth-of-type(3),
+.score.computer .item:nth-of-type(3) {
+  background-image: url(assets/scissors.png);
+}
+
+.computer.player,
+.player.player,
+.score.player {
+  border-top: 2px solid gold;
+}
+
+.computer.computer,
+.player.computer,
+.score.computer {
+  border-bottom: 2px solid gold;
+}
+
+.computer.computer .active,
+.player.computer .active,
+.score.computer .active {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+.computer.score,
+.player.score,
+.score.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer.score > div,
+.player.score > div,
+.score.score > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.computer.score > div .player-score,
+.computer.score > div .computer-score,
+.computer.score > div .draw-score,
+.player.score > div .player-score,
+.player.score > div .computer-score,
+.player.score > div .draw-score,
+.score.score > div .player-score,
+.score.score > div .computer-score,
+.score.score > div .draw-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.computer.score > div .player-score h2,
+.computer.score > div .computer-score h2,
+.computer.score > div .draw-score h2,
+.player.score > div .player-score h2,
+.player.score > div .computer-score h2,
+.player.score > div .draw-score h2,
+.score.score > div .player-score h2,
+.score.score > div .computer-score h2,
+.score.score > div .draw-score h2 {
+  background: royalblue;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.computer.score > div .player-score h3,
+.computer.score > div .computer-score h3,
+.computer.score > div .draw-score h3,
+.player.score > div .player-score h3,
+.player.score > div .computer-score h3,
+.player.score > div .draw-score h3,
+.score.score > div .player-score h3,
+.score.score > div .computer-score h3,
+.score.score > div .draw-score h3 {
+  background: goldenrod;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */

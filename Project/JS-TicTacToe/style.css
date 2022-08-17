@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body > h1 {
+  background: #333;
+  color: #fff;
+  padding: 6px 52px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+body > .bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+body > .bottom h4 {
+  padding: 6px 20px;
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > .bottom h4 #playerText {
+  background: royalblue;
+  margin-left: 4px;
+  border-radius: 3px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+  font-size: 24px;
+}
+
+body > .bottom a {
+  background: #333;
+  padding: 8px 28px;
+  border-radius: 3px;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container {
+  width: 362px;
+  height: 362px;
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .item {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 100px;
+  padding-bottom: 30px;
+  background: royalblue;
+  color: #fff;
+  user-select: none;
+}
+
+.container .win {
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: absolute;
+  background: #64c864;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  border-top: 1px solid #222;
+  transform: translateY(-50px);
+  transition: 0.15s ease-in-out;
+}
+
+.container .win .xwin,
+.container .win .owin {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-40px);
+  opacity: 0;
+  transition: 0;
+}
+
+.container .win .xwin svg,
+.container .win .owin svg {
+  width: 50px;
+  height: 50px;
+}
+
+.container .win .xwin.owin.active,
+.container .win .owin.owin.active {
+  opacity: 1;
+}
+
+.container .win .xwin.xwin.active,
+.container .win .owin.xwin.active {
+  opacity: 1;
+}
+
+.container .win h2 {
+  font-size: 36px;
+  letter-spacing: 4px;
+  transform: translateX(30px);
+  font-weight: 500;
+}
+
+.container .win.active {
+  transform: translateY(0px);
+}
+/*# sourceMappingURL=style.css.map */

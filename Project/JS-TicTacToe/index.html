@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe Game</h1>
+    <div class="container">
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+      <span id="item" class="item"></span>
+
+      <div id="win" class="win">
+        <div class="xwin">
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.22676 4.22676C4.5291 3.92441 5.01929 3.92441 5.32163 4.22676L12 10.9051L18.6784 4.22676C18.9807 3.92441 19.4709 3.92441 19.7732 4.22676C20.0756 4.5291 20.0756 5.01929 19.7732 5.32163L13.0949 12L19.7732 18.6784C20.0756 18.9807 20.0756 19.4709 19.7732 19.7732C19.4709 20.0756 18.9807 20.0756 18.6784 19.7732L12 13.0949L5.32163 19.7732C5.01929 20.0756 4.5291 20.0756 4.22676 19.7732C3.92441 19.4709 3.92441 18.9807 4.22676 18.6784L10.9051 12L4.22676 5.32163C3.92441 5.01929 3.92441 4.5291 4.22676 4.22676Z"
+              fill="#fff"
+            />
+          </svg>
+        </div>
+        <div class="owin">
+          <svg
+            <svg width="512px" height="512px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title>ionicons-v5-q</title><circle cx="256" cy="256" r="192" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/></svg>
+          </svg>
+        </div>
+        <h2>Win</h2>
+      </div>
+    </div>
+    <div class="bottom">
+      <h4>Player:<span id="playerText"></span></h4>
+      <a href="index.html">Refresh</a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

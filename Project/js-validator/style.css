@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+  border-radius: 2px;
+  width: 400px;
+  padding: 40px 40px;
+  color: #f2f2f2;
+}
+#form ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#form ul li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+#form ul li span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 18px;
+  width: 100%;
+  padding-left: 1px;
+}
+#form ul li span i {
+  margin-left: 2px;
+  margin-right: 4px;
+  font-size: 10px;
+}
+#form ul li h4 {
+  margin-bottom: 2px;
+  padding-left: 1px;
+}
+#form > ul li input {
+  width: 100%;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+}
+#form > ul li:last-of-type {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form > ul li button {
+  cursor: pointer;
+  padding: 6px 28px;
+}

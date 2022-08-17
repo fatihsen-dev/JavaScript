@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 560px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container > .top-container {
+  border-bottom: 2px solid #eee;
+  width: 100%;
+}
+.top-container > .buttons {
+  width: 100%;
+  margin: 10px 0;
+}
+.top-container > .buttons > button {
+  border: none;
+  outline: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #222;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.top-container > .buttons > button:nth-of-type(1) {
+  background-color: #dc3545;
+}
+.top-container > .buttons > button:nth-of-type(2) {
+  background-color: #0d6efd;
+}
+.top-container > .buttons > button:nth-of-type(3) {
+  background-color: #198754;
+}
+.top-container > .buttons > button:hover {
+  filter: grayscale(0.5);
+}
+.content {
+  width: 100%;
+  color: #222;
+  flex: 1;
+  padding: 10px 2px;
+  height: 500px;
+  overflow: auto;
+}
+/* Article list*/
+.content > .article {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+}
+.content > .article > li {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 500;
+  gap: 5px;
+}
+.content > .article > li > span {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 0 10px;
+  border-radius: 2px;
+  height: 30px;
+}
+/* Api list*/
+.content > .api {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 5px;
+}
+.content > .api > li {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 500;
+  gap: 5px;
+}
+.content > .api > li > .user .useravatar > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.content > .api > li > .userid,
+.content > .api > li > .user,
+.content > .api > li > .userurl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  background-color: #eee;
+  padding: 0 5px;
+  color: #222;
+  flex: 1;
+  border-radius: 3px;
+}
+.content > .api > li > .user {
+  flex: 4;
+  gap: 10px;
+}
+.content > .api > li > .user > .useravatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content > .api > li > .userid {
+  flex: 0.3;
+  justify-content: center;
+}
+.content > .api > li > .userurl {
+  justify-content: center;
+}

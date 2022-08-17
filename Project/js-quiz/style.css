@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 400px;
+  height: 370px;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.result {
+  width: 100%;
+  flex: 1;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.btn {
+  padding: 6px 30px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 2px;
+  transition: .3s;
+  width: 100%;
+}
+.btn:active{
+  background: #ccc;
+}
+.list {
+  width: 100%;
+  background: #fff;
+  margin: 10px 0;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}
+.list > .abcd{
+  width: 48%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #222;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+  transition: .3s;
+  border-radius: 2px;
+}
+.list > .abcd:hover{
+  background: #eee;
+}
+.list > .abcd > input[type="radio"]{
+  cursor: pointer;
+}

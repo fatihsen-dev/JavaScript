@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <canvas id="canvas"></canvas>
+        <video width="200" height="150" id="player"></video>
+        <div id="imgCtnr"></div>
+      </div>
+      <div class="filter-settings">
+        <label
+          >Blur:<input type="range" id="blur" min="0" value="0" max="40"
+        /></label>
+        <label
+          >Grayscale:<input
+            type="range"
+            id="grayscale"
+            min="0"
+            value="0"
+            max="100"
+        /></label>
+        <label
+          >Contrast:<input
+            type="range"
+            id="contrast"
+            min="1"
+            value="1"
+            max="10"
+        /></label>
+        <label
+          >Brightness:<input
+            type="range"
+            id="brightness"
+            min="1"
+            value="1"
+            max="10"
+        /></label>
+        <label
+          >Saturate:<input
+            type="range"
+            id="saturate"
+            min="1"
+            value="1"
+            max="100"
+        /></label>
+        <label
+          >Sepia:<input type="range" id="sepia" min="0" value="0" max="100"
+        /></label>
+        <label
+          >invert:<input type="range" id="invert" min="0" value="0" max="100"
+        /></label>
+        <button id="shotBtn">Screenshot</button>
+      </div>
+    </div>
+    <audio id="snap" src="snap.mp3" hidden></audio>
+    <script src="app.js"></script>
+  </body>
+</html>

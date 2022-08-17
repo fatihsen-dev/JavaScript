@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="input-container">
+      <label class="item"
+        >Blur:<input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="5"
+          data-sizing="px"
+      /></label>
+      <label class="item"
+        >Spacing:<input
+          type="range"
+          name="spacing"
+          min="0"
+          max="100"
+          value="10"
+          id="size"
+          data-sizing="px"
+      /></label>
+      <label class="item"
+        >Color: <input type="color" name="base" id="color" value="#ffc600"
+      /></label>
+
+      <h1><span id="colorText">JavaScript</span> bir programlama dili.</h1>
+    </div>
+
+    <img id="img" src="bg.jpeg" />
+
+    <script src="app.js"></script>
+  </body>
+</html>

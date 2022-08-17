@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+      }
+      .filter-settings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 0;
+      }
+      label {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 500;
+        justify-content: space-between;
+        border: 1px solid #111;
+        padding: 4px;
+        border-radius: 2px;
+      }
+      label > input[type="range"] {
+        width: 100%;
+        width: 200px;
+      }
+      button {
+        cursor: pointer;
+        font-weight: 500;
+      }
+      #player {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid #111;
+        z-index: 999;
+      }
+      #canvas {
+        border: 1px solid #111;
+        width: 640px;
+        height: 480px;
+      }
+      #imgCtnr {
+        height: 120px;
+        width: 100%;
+        max-width: 640px;
+        background-color: #eee;
+        border: 1px solid #111;
+        display: flex;
+        align-items: stretch;
+        padding: 4px;
+        gap: 4px;
+        overflow-x: auto;
+      }
+      #imgCtnr a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 130px;
+      }
+      #imgCtnr a > img {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <canvas id="canvas"></canvas>
+        <video width="200" height="150" id="player"></video>
+        <div id="imgCtnr"></div>
+      </div>
+      <div class="filter-settings">
+        <label
+          >Blur:<input type="range" id="blur" min="0" value="0" max="40"
+        /></label>
+        <label
+          >Grayscale:<input
+            type="range"
+            id="grayscale"
+            min="0"
+            value="0"
+            max="100"
+        /></label>
+        <label
+          >Contrast:<input
+            type="range"
+            id="contrast"
+            min="1"
+            value="1"
+            max="10"
+        /></label>
+        <label
+          >Brightness:<input
+            type="range"
+            id="brightness"
+            min="1"
+            value="1"
+            max="10"
+        /></label>
+        <label
+          >Saturate:<input
+            type="range"
+            id="saturate"
+            min="1"
+            value="1"
+            max="100"
+        /></label>
+        <label
+          >Sepia:<input type="range" id="sepia" min="0" value="0" max="100"
+        /></label>
+        <label
+          >invert:<input type="range" id="invert" min="0" value="0" max="100"
+        /></label>
+        <button id="shotBtn">Screenshot</button>
+      </div>
+    </div>
+    <audio id="snap" src="snap.mp3" hidden></audio>
+    <script src="app.js"></script>
+  </body>
+</html>

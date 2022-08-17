@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kelimeler">
+      <h3>kelimeler</h3>
+      <p>1.TAKTIK</p>
+      <p>2.PIJAMA</p>
+      <p>3.ATMACA</p>
+      <p>4.GORMEK</p>
+      <p>5.CAYLAK</p>
+      <p>6.VARLIK</p>
+    </div>
+    <div class="container" id="container">
+      <div class="human">
+        <div class="bottom"></div>
+        <div class="top"></div>
+        <div class="man">
+          <div id="head" class="uzuv head"></div>
+          <div id="body" class="uzuv body"></div>
+          <div id="leftHand" class="uzuv left-hand"></div>
+          <div id="rightHand" class="uzuv right-hand"></div>
+          <div id="leftFoot" class="uzuv left-foot"></div>
+          <div id="rightFoot" class="uzuv right-foot"></div>
+        </div>
+      </div>
+      <div class="input">
+        <div class="top">
+          <div class="l l-1"></div>
+          <div class="l l-2"></div>
+          <div class="l l-3"></div>
+          <div class="l l-4"></div>
+          <div class="l l-5"></div>
+          <div class="l l-6"></div>
+        </div>
+        <div class="bottom">
+          <input
+            maxlength="1"
+            placeholder="Bir harf girin."
+            type="text"
+            id="inputText"
+            class="inputText"
+          />
+          <button class="textBtn" id="testBtn">Dene</button>
+        </div>
+      </div>
+      <div id="score" class="score"></div>
+      <button
+        class="restart"
+        id="restart"
+        onclick="document.location.reload(true);"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M18.537 19.567A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 2.136-.67 4.116-1.81 5.74L17 12h3a8 8 0 1 0-2.46 5.772l.997 1.795z"
+          />
+        </svg>
+      </button>
+      <div class="olmeNedeni-container">
+        <span>Nasıl öldü:</span>
+        <span id="olmeNedeni"></span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

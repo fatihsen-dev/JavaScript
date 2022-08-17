@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tool-bar">
+        <div class="color-ctnr">
+          <input type="color" id="inputColor" value="#222222" />
+        </div>
+        <div class="colors">
+          <div id="btnBlack" class="color-black"></div>
+          <div id="btnWhite" class="color-white"></div>
+          <div id="btnRed" class="color-red"></div>
+          <div id="btnGreen" class="color-green"></div>
+          <div id="btnBlue" class="color-blue"></div>
+        </div>
+        <button id="changeBg"><i class="fa-solid fa-rotate"></i></button>
+        <button id="clearCanvas"><i class="fa-solid fa-broom"></i></button>
+        <input type="range" id="inputRange" min="0" max="100" value="4" />
+      </div>
+      <canvas id="draw"></canvas>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="app.js"></script>
+  </body>
+</html>
